@@ -12,8 +12,7 @@
       register: output
 
   - name: Check content of Output Variable
-    debug:
-      var: output
+    debug: var=output
 
   - name: Create Folder using Shell Module
     shell: "mkdir /tmp/sampledirectoryusingshell"
