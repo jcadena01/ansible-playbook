@@ -1,0 +1,3 @@
+foldername: sampledirectory-jc
+folderlocation: "/tmp/{{ foldername }}"
+folder2name: sampledirectoryusingshell

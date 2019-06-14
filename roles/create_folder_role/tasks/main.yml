@@ -1,0 +1,17 @@
+- name: Create Folder
+  file:
+    path: "{{ folderlocation }}"
+    state: directory
+
+- name: Check if {{ folder2name }} exists
+  stat:
+    path: "/tmp/{{ folder2name }}"
+  register: output
+
+- name: Check content of Output Variable
+  debug:
+    var: output
+
+- name: Create Folder using Shell Module
+  shell: "mkdir /tmp/{{ folder2name }}"
+  when: output.stat.exists!=true
