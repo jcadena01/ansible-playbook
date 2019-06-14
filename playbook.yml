@@ -3,5 +3,5 @@
   tasks:
   - name: Create Folder
     file: 
-      path: /sampledirectory-jc/
+      path: /tmp/sampledirectory-jc/
       state: directory
