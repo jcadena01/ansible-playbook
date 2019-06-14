@@ -18,3 +18,12 @@
   - name: Create Folder using Shell Module
     shell: "mkdir /tmp/sampledirectoryusingshell"
     when: output.stat.exists!=true
+
+  - name: Create files using loops
+    file:
+      path: "/tmp/sampledirectoryusingshell/{{ item }}"
+      state: touch
+    with_items:
+      - file1
+      - file2
+      - file3
