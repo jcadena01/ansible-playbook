@@ -1,0 +1,7 @@
+---
+- hosts: target-machine
+  tasks:
+  - name: Create Folder
+    file: 
+      path: /sampledirectory-jc/
+      state: directory
