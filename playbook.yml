@@ -5,3 +5,6 @@
     file: 
       path: /tmp/sampledirectory-jc/
       state: directory
+
+  - name: Create Folder using Shell Module
+    shell: "mkdir /tmp/sampledirectoryusingshell"
